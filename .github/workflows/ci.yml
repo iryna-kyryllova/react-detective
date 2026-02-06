@@ -32,3 +32,36 @@ jobs:
       - name: Build
         working-directory: panel-app
         run: npm run build
+
+      - name: Prepare extension package folder
+        run: |
+          rm -rf extension
+          mkdir -p extension/panel-dist
+
+          # copy built panel (Vite outputs to ../panel-dist)
+          cp -R panel-dist/* extension/panel-dist/
+
+          # copy extension root files
+          cp manifest.json extension/
+          cp background.js extension/
+          cp content-script.js extension/
+          cp page-hook.js extension/
+          cp devtools.js extension/
+          cp devtools.html extension/
+          cp popup.html extension/ || true
+          cp popup.css extension/ || true
+
+          # copy folders if exist
+          cp -R images extension/ || true
+          cp -R shared extension/ || true
+
+      - name: Create zip
+        run: |
+          cd extension
+          zip -r ../react-detective.zip .
+
+      - name: Upload artifact (zip)
+        uses: actions/upload-artifact@v4
+        with:
+          name: react-detective
+          path: react-detective.zip
