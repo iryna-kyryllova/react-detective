@@ -1,10 +1,3 @@
-/**
- * DevTools panel (ReactFlow UI).
- * Receives events from background.js and renders:
- * - component tree graph
- * - simple rerender analytics
- */
-
 import { useState } from 'react'
 import { ReactFlowProvider, type Node, type Edge } from '@xyflow/react'
 import { useAppSelector } from './store/hooks'
