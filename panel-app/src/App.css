@@ -1,1 +1,44 @@
+.panel-default {
+  padding: 16px;
+}
 
+.panel {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.graph {
+  flex: 2;
+}
+
+.sidebar {
+  flex: 1;
+  border-left: 1px solid #263238;
+  overflow-y: auto;
+}
+
+.sidebar-block {
+  padding: 16px;
+}
+
+.sidebar-block:not(:last-child) {
+  border-bottom: 1px solid #263238;
+}
+
+.component:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.component-title {
+  font-weight: 500;
+}
+
+.component-count,
+.component-reason {
+  font-weight: 300;
+}
+
+.component-list {
+  margin: 5px 0 16px;
+}
