@@ -1,0 +1,14 @@
+/**
+ * Shared event type constants used across the extension.
+ */
+
+const EVENT_TYPES = {
+  INJECT_HOOK_FROM_PANEL: 'INJECT_HOOK_FROM_PANEL',
+  PANEL_READY: 'PANEL_READY',
+  STATUS: 'STATUS',
+  FIBER_GRAPH: 'FIBER_GRAPH',
+  FIBER_UPDATE: 'FIBER_UPDATE',
+  FIBER_META: 'FIBER_META'
+}
+
+self.EVENT_TYPES = EVENT_TYPES

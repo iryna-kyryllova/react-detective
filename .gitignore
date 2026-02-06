@@ -1,0 +1,5 @@
+node_modules
+dist
+panel-dist
+.env
+.DS_Store
