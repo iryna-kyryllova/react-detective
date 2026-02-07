@@ -195,7 +195,3 @@ git push origin v1.0.1
 - Export graphs (SVG / JSON)
 - Learning mode for junior developers
 - Performance sampling mode
-
-```
-
-```
