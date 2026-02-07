@@ -60,7 +60,7 @@ All processing is performed locally in the browser. No external services or data
 
 ## 📁 Project Structure
 
-````text
+```text
 react-detective/
 │
 ├── panel-app/ # React DevTools panel application
@@ -114,7 +114,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/react-detective.git
 cd react-detective
-````
+```
 
 Install dependencies:
 
@@ -195,3 +195,7 @@ git push origin v1.0.1
 - Export graphs (SVG / JSON)
 - Learning mode for junior developers
 - Performance sampling mode
+
+```
+
+```
